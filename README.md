@@ -19,7 +19,7 @@ when you create a new application.
 
 Create a new app with the following repository:
 
-    https://github.com/phonegap/phonegap-start.git
+    https://github.com/refda/phonegap-start.git
 
 ## Contributors
 
