@@ -33,6 +33,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        window.open("https://kraftstoffbilliger.de", '_blank', 'toolbar=no,location=no');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
