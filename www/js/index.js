@@ -34,15 +34,11 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
     document.removeEventListener('deviceready', onDeviceReady, false);
-    window.open("https://kraftstoffbilliger.de/m3/", '_blank', 'toolbar=no,location=no');      
-    admob.setOptions({
-    publisherId:          "ca-app-pub-3940256099942544/6300978111"
-    });
+    window.open("http://kraftstoffbilliger.de/m3/", '_blank', 'toolbar=no,location=no');      
+    admob.setOptions({publisherId: "ca-app-pub-3940256099942544/6300978111"});
     admob.createBannerView();
-    admob.showBannerAd(true);
-        
-        
-    //app.receivedEvent('deviceready');
+    admob.showBannerAd(true);           
+    app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -51,7 +47,6 @@ var app = {
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-      
+        receivedElement.setAttribute('style', 'display:block;');      
     }
 };
