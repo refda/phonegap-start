@@ -3,6 +3,7 @@
 > TESTING APP PLEASE DON'T USE! PLEASE USE FOLLOWING: https://github.com/phonegap/phonegap-start
 > TEST APP BITTE NICHT BENUTZEN. BITTE FOLGENDES NUTZEN: https://github.com/phonegap/phonegap-start
 > PUBLISHING IOS https://www.wenz.io/ApplicationLoader
+> GEN https://build.phonegap.com/apps/
 
 ## Usage
 
