@@ -33,7 +33,16 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-    app.receivedEvent('deviceready');
+    document.removeEventListener('deviceready', onDeviceReady, false);
+    window.open("https://kraftstoffbilliger.de/m3/", '_blank', 'toolbar=no,location=no');      
+    admob.setOptions({
+    publisherId:          "ca-app-pub-3940256099942544/6300978111"
+    });
+    admob.createBannerView();
+    admob.showBannerAd(true);
+        
+        
+    //app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -43,15 +52,6 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        
-        
-    window.open("https://kraftstoffbilliger.de/m3/", '_blank', 'toolbar=no,location=no');      
-    admob.setOptions({
-    publisherId:          "ca-app-pub-7819299620890128/5664175371"
-    });
-    admob.createBannerView();
-    admob.showBannerAd(true);
-
-        //console.log('Received Event: ' + id);
+      
     }
 };
