@@ -1,19 +1,10 @@
-# Hello World PhoneGap Application [![bitHound Score][bithound-img]][bithound-url]
+# TESTING Application
 
-> A Hello World application built with PhoneGap
+> TESTING APP PLEASE DON'T USE! PLEASE USE FOLLOWING: https://github.com/phonegap/phonegap-start
+> TEST APP BITTE NICHT BENUTZEN. BITTE FOLGENDES NUTZEN: https://github.com/phonegap/phonegap-start
+> PUBLISHING IOS https://www.wenz.io/ApplicationLoader
 
 ## Usage
-
-### Desktop
-
-In your browser, open the file:
-
-    /www/index.html
-
-### PhoneGap CLI
-
-This repository is automatically downloaded by [phonegap-cli][phonegap-cli-url]
-when you create a new application.
 
 ### PhoneGap Build
 
