@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {     
     window.location.href="http://kraftstoffbilliger.de/m3/";
-    admob.setOptions({publisherId: "ca-app-pub-3940256099942544/6300978111",
+    admob.setOptions({publisherId: "ca-app-pub-7819299620890128/1448416978",
     adSize:               admob.AD_SIZE.SMART_BANNER,
     bannerAtTop:          false,
     autoShowBanner:       true
