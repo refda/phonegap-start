@@ -32,14 +32,12 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-    //window.open("http://kraftstoffbilliger.de/m3/", '_self', 'toolbar=no,location=no');      
+    onDeviceReady: function() {     
     window.location.href="http://kraftstoffbilliger.de/m3/";
     admob.setOptions({publisherId: "ca-app-pub-3940256099942544/6300978111",
-  adSize:               admob.AD_SIZE.SMART_BANNER,
-  bannerAtTop:          false,
-  isTesting:            true,
-  autoShowBanner:       true
+    adSize:               admob.AD_SIZE.SMART_BANNER,
+    bannerAtTop:          false,
+    autoShowBanner:       true
     });
     admob.createBannerView();       
     app.receivedEvent('deviceready');
