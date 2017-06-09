@@ -27,11 +27,15 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener("offline", this.onOffline, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
+    onOffline: function() {
+    alert("Bitte eine Internetverbindung aufbauen.");
+    },
     onDeviceReady: function() {     
     window.location.href="http://kraftstoffbilliger.de/m3/";
     admob.setOptions({publisherId: "ca-app-pub-7819299620890128/9086816578",
