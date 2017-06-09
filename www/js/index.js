@@ -34,7 +34,7 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onOffline: function() {
-    alert("Bitte eine Internetverbindung aufbauen.");
+    window.location.href="offline.html";
     },
     onDeviceReady: function() {     
     window.location.href="http://kraftstoffbilliger.de/m3/";
