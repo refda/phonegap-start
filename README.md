@@ -5,6 +5,7 @@
 > PUBLISHING IOS https://www.wenz.io/ApplicationLoader
 > GEN https://build.phonegap.com/apps/
 > IMG http://pgicons.abiro.com/
+> TEST https://app.testobject.com/#/
 
 ## Usage
 
