@@ -68,8 +68,6 @@
     <!--<plugin name="cordova-plugin-vibration" />-->
     <gap:plugin name="phonegap-admob" source="npm"/>
         
-        <plugin name="cordova-plugin-openurlext" />
-
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
     <!--
@@ -132,7 +130,7 @@
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-navigation href="*" />
-     <allow-intent href="http://*/*" />
+    <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
