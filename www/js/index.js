@@ -41,6 +41,18 @@ var app = {
        (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
     //ONLINE
     window.location.href="http://kraftstoffbilliger.de/m3/";
+        
+        
+        
+    setInterval(function() {
+      if((navigator.connection.type).toUpperCase() != "NONE" &&
+       (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {} else {
+      window.location.href="offline.html";
+      }
+    }, 5000);
+  
+                
+        
     } else {
     window.location.href="offline.html";
     }   
