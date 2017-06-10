@@ -27,7 +27,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-        document.addEventListener("offline", this.onOffline, false);
+        document.addEventListener("offline", function() {window.location.href="offline.html";}, false);
     },
     // deviceready Event Handler
     //
@@ -36,23 +36,12 @@ var app = {
     onOffline: function() {
     window.location.href="offline.html";
     },
-    onDeviceReady: function() {    
+    onDeviceReady: function() {
+    document.addEventListener("offline", function() {window.location.href="offline.html";}, false);
     if((navigator.connection.type).toUpperCase() != "NONE" &&
        (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {
     //ONLINE
-    window.location.href="http://kraftstoffbilliger.de/m3/";
-        
-        
-        
-    setInterval(function() {
-      if((navigator.connection.type).toUpperCase() != "NONE" &&
-       (navigator.network.connection.type).toUpperCase() != "UNKNOWN") {} else {
-      window.location.href="offline.html";
-      }
-    }, 5000);
-  
-                
-        
+    window.location.href="http://kraftstoffbilliger.de/m3/";       
     } else {
     window.location.href="offline.html";
     }   
